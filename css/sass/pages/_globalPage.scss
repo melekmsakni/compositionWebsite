@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  body {
+    background-color: #f6f6f6;
+  }
+  font: {
+    family: Tahoma;
+    size: 16px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  ul ,ol  {
+    li {
+      list-style: none;
+    }
+  }
+}

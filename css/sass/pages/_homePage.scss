@@ -1,0 +1,108 @@
+// start slider
+.slider {
+  padding: 40px 0px;
+  blockquote {
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 500;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+    font: {
+      style: italic;
+    }
+  }
+  img {
+    width: 100%;
+    height: 400px;
+    padding: 0px 12px;
+  }
+  .bullets {
+    display: flex;
+    justify-content: center;
+    li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #5e5e5e;
+      margin: 0px 4px;
+      cursor: pointer;
+      &.active {
+        border: 2px solid black;
+        background-color: #fff;
+      }
+    }
+  }
+}
+// end slider
+
+// start services
+.services {
+  padding: 40px 0px;
+  .serviceContent {
+    display: flex;
+    justify-content: space-between;
+    .serviceBox {
+      width: calc(85% / 3);
+      h3 {
+        color: #666;
+        i {
+          margin-right: 10px;
+          font-size: 30px;
+        }
+      }
+      p {
+        margin: 10px 0px;
+        color: #777;
+        line-height: 1.7;
+      }
+      a {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+// end services
+
+// begin player
+.players {
+  padding: 40px 0px;
+  .playersContent {
+    display: flex;
+    justify-content: space-between;
+    .pBox {
+      width: calc(90% / 5);
+      img {
+        width: 100%;
+      }
+      .title {
+        margin: 15px 0px;
+        color: #666;
+      }
+      p {
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+      a {
+        color: $mainColor;
+        font-weight: bold;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          background-color: #666;
+          bottom: 0px;
+          left: 0px;
+          transition: 0.3s;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// end player
