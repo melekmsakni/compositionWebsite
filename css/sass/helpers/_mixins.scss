@@ -23,3 +23,12 @@
     @content;
   }
 }
+
+@mixin spaceBetweenSections($p) {
+  padding: {
+    top: $p;
+    bottom: $p;
+    right: 0px;
+    left: 0px;
+  }
+}

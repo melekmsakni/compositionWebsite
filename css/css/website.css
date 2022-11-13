@@ -101,7 +101,10 @@ html ul li, html ol li {
 }
 
 .slider {
-  padding: 40px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .slider blockquote {
   line-height: 1.6;
@@ -134,7 +137,10 @@ html ul li, html ol li {
 }
 
 .services {
-  padding: 40px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .services .serviceContent {
   display: flex;
@@ -160,7 +166,10 @@ html ul li, html ol li {
 }
 
 .players {
-  padding: 40px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .players .playersContent {
   display: flex;
@@ -197,4 +206,18 @@ html ul li, html ol li {
 }
 .players .playersContent .pBox a:hover::before {
   width: 100%;
+}
+
+.lorem {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.lorem .loremContent {
+  display: flex;
+  justify-content: space-between;
+}
+.lorem .loremContent div {
+  width: 30%;
 }
