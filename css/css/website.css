@@ -221,3 +221,11 @@ html ul li, html ol li {
 .lorem .loremContent div {
   width: 30%;
 }
+
+.footer {
+  background-color: #9c9c9c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+}

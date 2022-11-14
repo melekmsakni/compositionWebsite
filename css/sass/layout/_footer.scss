@@ -1,0 +1,8 @@
+// start footer
+.footer{
+    background-color:$greyColor;
+    @include spaceBetweenSections(20px);
+    
+}
+
+// end footer
