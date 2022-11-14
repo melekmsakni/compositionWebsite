@@ -35,6 +35,11 @@ html ul li, html ol li {
   border-radius: 10px;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  .headWithBorder h2 {
+    padding: 0px;
+  }
+}
 .headWithBorder h2::before {
   content: "";
   position: absolute;
@@ -66,12 +71,12 @@ html ul li, html ol li {
   padding-right: 15px;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .container {
     width: 970px;
   }
@@ -90,8 +95,20 @@ html ul li, html ol li {
   display: flex;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .header .container {
+    flex-direction: column;
+  }
+}
 .header .logo {
-  width: 40%;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .header .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 .header .logo h1 {
   margin: 0px;
@@ -159,8 +176,20 @@ html ul li, html ol li {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .services .serviceContent {
+    flex-direction: column;
+  }
+}
 .services .serviceContent .serviceBox {
   width: 28.3333333333%;
+}
+@media (max-width: 767px) {
+  .services .serviceContent .serviceBox {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 .services .serviceContent .serviceBox h3 {
   color: #666;
@@ -188,8 +217,29 @@ html ul li, html ol li {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 991px) {
+  .players .playersContent {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .players .playersContent {
+    flex-direction: column;
+  }
+}
 .players .playersContent .pBox {
   width: 18%;
+}
+@media (max-width: 767px) {
+  .players .playersContent .pBox {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 991px) {
+  .players .playersContent .pBox {
+    flex-basis: 49%;
+  }
 }
 .players .playersContent .pBox img {
   width: 100%;
@@ -231,8 +281,21 @@ html ul li, html ol li {
   display: flex;
   justify-content: space-between;
 }
-.lorem .loremContent div {
-  width: 30%;
+@media (max-width: 767px) {
+  .lorem .loremContent {
+    flex-direction: column;
+  }
+}
+.lorem .loremContent .loremBox {
+  max-width: 30%;
+}
+@media (max-width: 767px) {
+  .lorem .loremContent .loremBox {
+    max-width: 100%;
+  }
+}
+.lorem .loremContent .loremBox img {
+  width: 100%;
 }
 
 .footer {
@@ -249,6 +312,11 @@ html ul li, html ol li {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+@media (max-width: 767px) {
+  .footer .footerContent {
+    flex-direction: column;
+  }
 }
 .footer .footerContent .title {
   margin-bottom: 15px;

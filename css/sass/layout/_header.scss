@@ -3,11 +3,24 @@
   border-bottom: 1px solid $greyColor;
   .container {
     display: flex;
+
     align-items: center;
+
+    @media #{$maxMedium} {
+      flex-direction: column;
+
+    }
+
   }
 
   .logo {
-    width: 40%;
+    width:100%;
+    @media #{$maxMedium} {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
     h1 {
       margin: 0px;
     }
