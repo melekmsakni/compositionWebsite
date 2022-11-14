@@ -47,6 +47,19 @@ html ul li, html ol li {
   z-index: -1;
 }
 
+.mainButton {
+  background-color: #e2494c;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  color: #FFF;
+  min-width: 120px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
 .container {
   margin: auto;
   padding-left: 15px;
@@ -228,4 +241,64 @@ html ul li, html ol li {
   padding-bottom: 20px;
   padding-right: 0px;
   padding-left: 0px;
+}
+.footer p {
+  color: gray;
+}
+.footer .footerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer .footerContent .title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer .footerContent .latest {
+  align-content: space-between;
+  width: 60%;
+}
+.footer .footerContent .latest .imgBox {
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer .footerContent .latest .imgBox .txtbox {
+  padding: 15px 0px;
+  margin-left: 20px;
+}
+.footer .footerContent .latest .imgBox .txtbox h3 {
+  margin-bottom: 20px;
+  color: #e2494c;
+}
+.footer .footerContent .latest .imgBox .txtbox p {
+  line-height: 1.6;
+}
+.footer .footerContent .companyDetails section {
+  margin-bottom: 20px;
+}
+.footer .footerContent .contactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .footerContent .contactUs input,
+.footer .footerContent .contactUs textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 5px 8px;
+}
+.footer .footerContent .contactUs input:focus,
+.footer .footerContent .contactUs textarea:focus {
+  outline: none;
+}
+.footer .line {
+  width: 100%;
+  margin: 10px 0px;
+  height: 2px;
+  background-color: gray;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: space-between;
 }
